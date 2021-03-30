@@ -13,7 +13,7 @@ function ExperienceBar() {
       </div>
       <span>600 xp</span>
     </header>
-  );
+  )
 }
 
-export default ExperienceBar;
+export default ExperienceBar

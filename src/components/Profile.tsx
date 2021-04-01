@@ -6,10 +6,12 @@ function Profile() {
       <img src="https://github.com/cesardoliveira.png" alt="profile-photo" />
       <div>
         <strong>Cesar Oliveira</strong>
-        <p>Level 1</p>
+        <p>
+          <img src="icons/level.svg" alt="Icon Level" />
+          Level 1</p>
       </div>
     </div>
-  )  
+  )
 }
 
 export default Profile

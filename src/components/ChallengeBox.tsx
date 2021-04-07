@@ -1,24 +1,21 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { ChallengesContext } from '../contexts/ChallengesContext'
 
 import styles from '../styles/components/ChallengeBox.module.css'
 
 function ChallengeBox() {
-  const contextData = useContext(ChallengesContext)
-  console.log(contextData)
-
-  const [hasActiveChallenge] = useState(false)
+  const { activeChallenge }  = useContext(ChallengesContext)
 
   return (
     <div className={styles.challengeBoxContainer}>
-      { hasActiveChallenge ? (
+      { activeChallenge ? (
         <div className={styles.challengeActive}>
-          <header>Win 400 xp</header>
+          <header>Win {activeChallenge.amount} xp</header>
 
           <main>
             <img src="icons/body.svg" alt="Body" />
             <strong>New Challenge</strong>
-            <p>Walk for 3 minutes and stretch your legs to stay healthy.</p>
+            <p>{activeChallenge.description}</p>
           </main>
 
           <footer>

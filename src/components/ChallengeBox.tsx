@@ -13,7 +13,10 @@ function ChallengeBox() {
           <header>Win {activeChallenge.amount} xp</header>
 
           <main>
-            <img src="icons/body.svg" alt="Body" />
+            {activeChallenge.type === 'body' 
+              ? <img src="/icons/body.svg" /> 
+              : <img src="/icons/eye.svg" />
+            }
             <strong>New Challenge</strong>
             <p>{activeChallenge.description}</p>
           </main>

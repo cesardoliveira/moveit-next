@@ -41,7 +41,7 @@ Before you start in Dev or Test enviroment make sure you have installed:
 ### npm
 
 ```git
-npm dev
+npm run dev
 ```
 
 ### Yarn
